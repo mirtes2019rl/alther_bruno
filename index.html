@@ -1,0 +1,491 @@
+
+<html>
+    
+<head>
+    <meta charset="utf-8"/>
+<title>
+
+ </title>
+<style>
+
+
+
+table {
+  border: 2px solid #ccc;
+  border-radius: 5px; width: 500px;
+}
+.classe {  padding: 8px; text-align: left; border: 17px solid #ddd; }
+.classe2 { padding: 8px; text-align: left;}
+
+
+
+
+
+@font-face { font-family: fontemenu01; src: url(fonts/BwModelicaSS01-Regular.otf); }
+@font-face { font-family: fontemenu02; src: url(fonts/BwModelicaSS01-Black.otf); }
+@font-face { font-family: fontemenu03; src: url(fonts/BwModelicaSS01-ExtraBold.otf); }
+
+  body {padding: 0; margin: 0;}
+
+.menu01 { widht: 100%; height: 195px; display: flex; flex-flow: column;  justify-content: center; align-items: center;}
+.menu02 { widht: 100%; height: 400px;  background-image: url('bg1.png');  background-size: cover; color: white; font-size: 40px; font-family: fontemenu01; }
+.menu01Filho01{padding-top: 20%}
+.menu01Filho01 a {line-height: 70px; text-decoration: none; color: white; font-family: fontemenu02;}
+.body01 { widht: 100%; min-height: 530px; background-color: rgb(234,234,234); margin-top:7px; display: flex; flex-flow: column; align-items: center; }
+.body01 h1 {font-family: fontemenu02; color: rgb(91,125,125); font-size: 45px;}
+.card01 { widht: 100%; height: 30px; background-color: black;}
+.noticias {widht: 100%; height: 375px;  display: flex; flex-flow: column; justify-content: center; align-items: center;}
+.faixa{background-color: rgb(112,184,199); margin-top: 40px; font-family: fontemenu01; color: white; font-size: 32px; text-align: center; display: flex; flex-flow: column; justify-content: center; align-items: center; align-content: center;}
+.promo {background-color: green; background-image: url('promo01.png');  background-size: cover; font-family: fontemenu02; color: white; font-size: 32px; }
+.promo a{font-family: fontemenu01; }
+.cardboard {widht: 100%; height: 477px; text-align: center; font-family: fontemenu02; font-size: 22px; color: rgb(223,137,18); display: flex; flex-flow: column; justify-content: center; align-items: center;}
+
+.table {widht: 100%; height: 385px; background-color: rgb(112,184,199); text-align: center; font-family: fontemenu02; font-size: 45px; color: white; display: flex; flex-flow: column; align-items: center; padding-top: 50px;}
+.info {widht: 100%; height: 425px; background-image: url('bg5.png');  background-size: cover; margin-top: 7px;}
+.testemunhas { display: flex; flex-flow: column; align-items: center; widht: 100%; height: 550px;  font-family: fontemenu02; text-align: center; padding-top: 64px; font-size: 45px; color: rgb(112,184,199);}
+.rodape {widht: 100%; height: auto; background-color: rgb(253,95,48); display: flex; flex-flow: row; justify-content: space-between; padding: 100px;}
+
+
+<!-- TABLE STYLE -->
+
+
+.divTable{
+	display: table;
+	width: 100%;
+
+}
+.divTableRow {
+	display: table-row;
+
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 2.5px solid rgb(162,209,219);
+	display: table-cell;
+	padding: 3px 10px;
+  width: 375px;
+  height: 50px;
+  line-height: 50px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+
+
+
+
+
+
+
+
+
+.debugBox01 {
+    background-color: green; position: fixed; width: 50px; height: 50px; top: 5%; left: 5%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.point01 {width: 80%;  height: 80%; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;  }*/
+.point02 { width: 100%;   font-family: fontemenu01; color: rgb(90,124,125); font-size: 23px; text-align: center;}
+.point02 a {font-family: fontemenu02; color: rgb(90,124,125); font-size: 23px;}
+
+.point03 {background-color: rgb(253,95,48);background-image: url('card01.png');     background-size: cover; display: flex; flex-flow: row norap; justify-content: space-between; }
+
+.point04 { width: 550px; height: 100%; background-color: rgb(90,124,125); border-radius: 15px; background-image: url('card02.png');  background-size: cover; display: flex; flex-flow: row norap; justify-content: space-between; }
+.point05 { width: 80%; height: 375; display: flex; justify-content: space-between;}
+
+.noticiascard {border-style: solid; border-width: 3px; ;border-color: rgb(253,95,48); border-radius: 15px; font-family: fontemenu01; font-size: 22px; padding: 20px; color: rgb(103,103,103); }
+
+/*.point06 { padding-left: 200px; padding-top: 50px;}*/
+
+.point07{ width: 52%; height: 95%; float: right; display: flex; flex-flow: column; nowrap;  justify-content: space-between; color: white; font-size: 20px; font-weight: 100; }
+.card11 { padding-left: 2em; padding-top: 2em; font-family: fontemenu02; color: white; font-size: 28px;}
+.card22 { font-family: fontemenu01; color: white;  line-height: 40px;}
+@media only screen and (max-width: 1400px) {
+  .point01 {
+    width: 86%; }
+    .point05 {width: 98%; }
+
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .point01 {
+    width: 97%; }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .point01 {
+    width: 99%; flex-flow: row wrap; height: 70%; display: flex; flex-flow: column;  }
+   /* .body01{
+     height: 1300px; display: flex; flex-flow: column; align-items: center; align-content: center; padding-top: 50px;
+    }*/
+    .point02 a {font-size: 35px;}
+   .point04 { margin-top: 30px; background-position: 0px 42px; width: 700px; height: 600px; }
+   .point03 { margin-top: 30px; background-position: 0px 42px; width: 700px; height: 600px;}
+
+   .menu02{font-size: 50px; line-height: 40px;}
+.menu01Filho01{font-size: 78px; line-height: 68px; padding-left: 40px;}
+.point05 {display: flex; flex-flow: column; justify-content: center; align-items: center; margin-top: -100;}
+.noticias {padding-top: -1330px; margin-top:0px; height: 1190px; flex-flow: row wrap; justify-content: center; align-items: start; text-align: center; }
+/*.noticiascard { margin-top: 30px; width: 400px; height: 400px; font-size: 40px;}*/
+.table{ height: 480px;}
+.menu02 {background-position: -900px 0px; height: 600px;}
+.promo { background-position: -150px 0px;}
+.point06 {padding-left: 40px;}
+.info { background-position: -100px 0px;}
+.card22 {font-size: 30px;}
+.card11 {font-size: 40px;}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </style>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <!-- 
+    DEGUB BOX
+     -->
+    
+    <div class="debugBox01">
+        DebugBox
+        
+        
+         </div>
+
+<div class="row justify-content-center">
+  <div class="col-12">
+    <div class="menu01">
+      <div class="container">
+        <img src="logo.png" class="img-fluid my-3 mx-auto" href="logo.png" alt="logo" height="60px" width="350px">
+      </div>
+    </div>
+  </div>
+</div>    
+
+<div class="row ">
+  <div class="col-12 menu02 align-items-end">
+    <div class="container">
+      <div class="col-12 col-md-6 mr-auto ">
+        <h2 class="h1 text-middle menu01Filho01" >Não consegue controlar
+        <br> o <strong>sal</strong> nas suas refeições?
+        <br> <strong><a href="https://althertech.com/bruno" class="text-white">Assuma o controle já! </a></strong></h2>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<!-- <div class="menu02">
+<div class="menu01Filho01">Não consegue controlar
+<br> o <a>sal</a> nas suas refeições?
+<br> <a href="https://althertech.com/bruno">Assuma o controle já! </a>
+</div>
+
+</div> -->
+
+<div class="body01">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-12">
+        <h1 class="text-center h1"><strong>Sabia que...</strong></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-12 col-md-6 ml-auto mb-3">
+        <div class="card rounded" style="background-color: rgb(253,95,48); min-height: 299px; background-image: url('card01.png');">
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-12 col-md-6">
+                <h2 class="h2 text-white mt-3">Excesso de sal<br> pode causar:</h2>
+              </div>              
+
+              <div class="col-12 col-md-6">
+                <div class="card22">
+                  <ul>
+                    <li>Hipertensão</li>
+                     <li>AVC</li>
+                    <li>Demência</li>
+                    <li>Osteoporose</li>
+                     <li>Excesso de peso</li>
+                  </ul>
+                </div>
+              </div>              
+            </div>            
+            
+          </div>
+        </div>        
+      </div>
+
+      <div class="col-12 col-md-6 mr-auto">
+        <div class="card rounded" style="background-color: rgb(90,124,125); min-height: 299px; background-image: url('card02.png');">
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-12 col-md-6">
+                <h2 class="h2 text-white mt-3">Falta de sal<br> pode causar:</h2>
+              </div>              
+
+              <div class="col-12 col-md-6">
+                <div class="card22">
+                  <ul>
+                    <li>Dores de cabeça</li>
+                    <li>Vótimitos</li>
+                    <li>Convulsões</li>
+                    <li>Levar ao coma ou<br> mesmo matar.</li>
+
+                  </ul>
+                </div>
+              </div>              
+            </div>            
+            
+          </div>
+        </div>   
+      </div>   
+    </div>
+    <div class="row mb-2 mt-5">
+      <div class="col-12">
+        <p style=" width: 100%;   font-family: fontemenu01; color: rgb(90,124,125); font-size: 23px; text-align: center;"><strong>Observação:</strong> A principal função do sódio (sal) é equilibrar a quantidade de água no organismo, juntamente com o potássio.</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h2 class="mt-5" style="text-align: center; font-family: fontemenu02; font-size: 45px; color: rgb(90,124,125);"><strong>Notícias</strong></h2>
+  </div>  
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-4 mb-3">
+      <div class="noticiascard rounded">
+        <p>Portugueses consomem mais do dobro do sal recomendado pela OMS<br>
+        <a style="line-height: 50px; font-family: fontemenu03; font-size: 20px; color: rgb(90,124,125)">Diário de notícias</a></p>
+        <button class="btn mr-auto" onclick="window.location.href = 'https://althertech.com/bruno';" style="width: 65px; height: 35px; border-radius: 10px; font-family: fontemenu03; font-size: 18px; border-style: none; background-color: rgb(253,95,48); color: white; ">Ler</button>
+      </div>     
+    </div>
+    <div class="col-12 offset-md-4 col-md-4 mb-3">
+      <div class="noticiascard rounded">
+        <p>Portugueses consomem mais do dobro do sal recomendado pela OMS<br>
+        <a style="line-height: 50px; font-family: fontemenu03; font-size: 20px; color: rgb(90,124,125)">Diário de notícias</a></p>
+        <button class="btn mr-auto" onclick="window.location.href = 'https://althertech.com/bruno';" style="width: 65px; height: 35px; border-radius: 10px; font-family: fontemenu03; font-size: 18px; border-style: none; background-color: rgb(253,95,48); color: white; ">Ler</button>
+      </div>     
+    </div>      
+  </div>
+  
+</div>
+
+<div class="row">
+  <div class="col-12 faixa">
+    <div class="container">
+      <p> A redução do sal actua em vários<br>
+      níveis e o seu benefício é grande.</p>
+    </div>
+    
+  </div>  
+</div>
+
+<div class="row">
+  <div class="col-12 promo">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 col-md-5">
+          
+          <h2 class="point06 h2 mt-4"><stong>A solução que precisa</stong></h2><h2 class="point06 h2 mt-4">
+          <a style="line-height: 38px;">Medidor de salinidade instantâneo</a></h2> 
+          <p class="point06" style="font-size: 24px; line-height: 30px; font-family: fontemenu01; font-weight: 100;">Ideal para medir a concentração de sal em<br>
+          alimentos, sopas, molhos, bebidas, <br>
+          bebidas desportivas…</p>        
+        </div>            
+      </div>
+      <div class="row">
+        <div class="col-12">        
+          <button onclick="window.location.href = 'https://alther.com/bruno';" style="background-color: rgb(223,137,18); width: 280px; height: 60px; border-radius: 25px; border-style: solid; border-color: white; font-family: fontemenu03; font-size: 25px; color: white;" class="mb-5">Encomendar já </button>
+        </div>
+      </div>    
+    </div>  
+  </div>
+</div>
+
+<!-- <div class="point06"><h2 class="point06"><stong>A solução que precisa</stong><br>
+      <a style="line-height: 38px;">Medidor de salinidade instantâneo</a></h2> <h4 style="font-size: 24px; line-height: 30px; font-family: fontemenu01; font-weight: 100;">Ideal para medir a concentração de sal em<br>
+      alimentos, sopas, molhos, bebidas, <br>
+      bebidas desportivas…</h4>
+    </div>
+    
+      <div style="width: 100%; height: auto;  display: flex; flex-flow: column; justify-content: center; align-items: center;">
+
+      <button onclick="window.location.href = 'https://alther.com/bruno';" style="background-color: rgb(223,137,18); width: 280px; height: 60px; border-radius: 25px; border-style: solid; border-color: white; font-family: fontemenu03; font-size: 25px; color: white; ">Encomendar já </button>
+    </div> -->
+
+<div class="row">
+  <div class="col-12">
+    <div class="cardboard">
+      <h1>Vantagens</h1>
+    </div>    
+  </div>  
+</div>
+
+
+  <div style=" width: 80%; height: 300px; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; font-family: fontemenu01; color: rgb(93,93,93);">
+    <div style=" width: 170; height: 240;"><img src="icon04.png" style="margin-bottom: 30px;">Medidor de
+densidade
+ do sal em líquido
+ou molho  
+  </div>
+<div style=" width: 170; height: 240;"><img src="icon03.png" style="margin-bottom: 30px;">Indicador de
+temperatura
+em ℃ ou ° F
+</div>
+<div style=" width: 170; height: 240;"><img src="icon02.png" style="margin-bottom: 30px;">Portátil e à
+prova de
+água (IP67)
+</div>
+<div style=" width: 170; height: 240;"><img src="icon01.png" style="margin-bottom: 30px;">Desliga
+automático
+em 10 minutos
+</div>
+
+</div>
+</div>
+<div class="table">Medir a quantidade de sal
+<div style=" width: 90%; height: 400px; display: flex; flex-flow: column; align-items: center; padding-top: 40px;">
+
+
+
+  <div class="divTable" style="font-size: 20px;">
+  <div class="divTableBody">
+  <div class="divTableRow">
+  <div class="divTableCell" style="border-right: none; border-radius: 5px 0 0 0; background-color: rgb(104,170,183);">Densidade de sal  (%)</div>
+  <div class="divTableCell" style="border-right: none; border-left: none;  background-color: rgb(104,170,183);">100ml</div>
+  <div class="divTableCell"style="border-left: none; border-radius: 0 5px 0 0;  background-color: rgb(104,170,183);">200ml</div>
+</div>
+  <div class="divTableRow">
+  <div class="divTableCell" style="font-family: fontemenu01;">Levemente salgado 0,3 a 0,5%</div>
+  <div class="divTableCell"  style="font-family: fontemenu01;">0.3g ~ 0.5g</div>
+  <div class="divTableCell"  style="font-family: fontemenu01;">0.6g ~ 1.0g </div>
+  </div>
+  <div class="divTableRow">
+  <div class="divTableCell"  style="font-family: fontemenu01; background-color: rgb(109,179,193);">Salgado médio 0,7% a 1,1%</div>
+  <div class="divTableCell"  style="font-family: fontemenu01; background-color: rgb(109,179,193);">0.7g ~ 1.1g</div>
+  <div class="divTableCell"  style="font-family: fontemenu01; background-color: rgb(109,179,193);">1.4g ~ 2.2g</div>
+  </div>
+  <div class="divTableRow">
+  <div class="divTableCell" style="border-radius: 0 0 0 5px; font-family: fontemenu01;">Muito salgado > 1,1%</div>
+  <div class="divTableCell"  style="font-family: fontemenu01; font-family: fontemenu01;"> > 1.1g </div>
+  <div class="divTableCell" style="border-radius: 0 0 5px 0; font-family: fontemenu01;"> > 2,2g</div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+ </div>
+<div class="info">
+<div class="point07">
+  <p style="font-family: fontemenu02; font-size: 30px;">Informações técnicas</p>
+<li style="font-family: fontemenu01;">Dimensões - 190 (C) x 32.2 (L) x 15.4 (A) mm</li>
+<li style="font-family: fontemenu01;">Tela de LCD - 29,5 (C) x 17,2 (L) mm</li>
+<li style="font-family: fontemenu01;">Material – ABS</li>
+<li style="font-family: fontemenu01;">Inclui bateria e tampa protetora de silicone</li>
+<li style="font-family: fontemenu01;">Certificado CE e RoHS</li>
+<li style="font-family: fontemenu01;">Garantia – 2 Anos</li>
+
+<div style="margin-top: 9px;">
+<button onclick="window.location.href = 'https://althertech.com/bruno';" style="background-color: rgb(223,137,18); width: 280px; height: 60px; border-radius: 20px; border-style: solid; border-color: white; font-family: fontemenu03; color: white; font-size: 28px; font-weight: 200;">Encomendar já</button>
+<br></div>
+
+
+
+
+ </div>
+
+
+ </div>
+<div class="testemunhas">Testemunhos
+<div style="width: 80%; height: 350px; margin-top: 60px; display: flex; justify-content: space-between; font-family: fontemenu01; font-size: 18px; color: rgb(103,103,103);">
+<div style=" width: 315px; height: 320px; display: flex; flex-flow: column; align-items: center; ">
+<div style="height: 125px; width: 125px; border-radius: 50%; border: 5px; border-color: rgb(112,184,199); border-style: solid; background-image: url('bg8.jpg');  background-size: cover; margin-bottom: 25px;"></div><br><div style="text-align: left; display: column; font-weight: 100; width: 100%;">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna” laborum. Sed ut pe <br><a style="line-height: 60px; font-family: fontemenu03; color: rgb(90,124,125);">Julio César</a></div>
+</div>
+<div style=" width: 315px; height: 320px; display: flex; flex-flow: column; align-items: center; ">
+<div style="height: 125px; width: 125px; border-radius: 50%; border: 5px; border-color: rgb(112,184,199); border-style: solid; background-image: url('bg8.jpg');  background-size: cover; margin-bottom: 25px;"></div><br><div style="text-align: left; display: column; font-weight: 100; width: 100%;">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna” laborum. Sed ut pe <br><a style="line-height: 60px; font-family: fontemenu03; color: rgb(90,124,125);">Julio César</a></div>
+</div>
+
+
+<div style=" width: 315px; height: 320px; display: flex; flex-flow: column; align-items: center; ">
+<div style="height: 125px; width: 125px; border-radius: 50%; border: 5px; border-color: rgb(112,184,199); border-style: solid; background-image: url('bg8.jpg');  background-size: cover; margin-bottom: 25px;"></div><br><div style="text-align: left; display: column; font-weight: 100; width: 100%;">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna” laborum. Sed ut pe <br><a style="line-height: 60px; font-family: fontemenu03; color: rgb(90,124,125);">Julio César</a></div>
+</div>
+
+
+
+</div>
+
+
+</div>
+<div class="rodape">
+<div style="font-family: fontemenu01; color: white; font-size: 19px;">Mais informações & encomendas<br>
+<a style="color: white; font-family: fontemenu03; font-weight: 100;">info@saltcontrol.com<br><img src="whats.png" width="25px" height="25px" style="padding-top: 20px;"> <a style="line-height: 50px;">WhatsApp +351 914 564 789 </a></a></div>
+<div><img width="auto" height="40px" src="branco.png"> </div>
+
+ </div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
